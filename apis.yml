@@ -1,7 +1,19 @@
 aid: eventup
 name: Eventup
-description: Eventup is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  EventUp is a global online marketplace and directory for event venues,
+  operated by Tripleseat. It lists over 15,000 restaurants, hotels, breweries,
+  rooftop bars, museums, libraries, and other unique spaces that people can
+  browse and request quotes from for parties, weddings, corporate events, and
+  meetings. Event planners and consumers search venues by city, capacity, event
+  type, and amenities and submit free quote requests directly to venue owners,
+  while venue owners list and market their spaces to receive booking inquiries.
+  A companion product, EventUp Planner, adds marketing, planning, and analytics
+  tooling. EventUp is a consumer-facing web marketplace and does not publish a
+  public developer API, OpenAPI specification, SDKs, or agent/MCP surface. This
+  API Evangelist profile was seeded as a 500 Global portfolio lead and enriched
+  with the discoverability, identity, and domain-security signals that are
+  publicly observable.
 url: https://raw.githubusercontent.com/api-evangelist/eventup/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +21,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://eventup.com/favicon.ico
 tags:
 - Company
+- Events
+- Venues
+- Marketplace
+- Event Planning
+- Weddings
+- Hospitality
+- Directory
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,20 @@ maintainers:
 common:
 - type: Website
   url: https://eventup.com
+- type: SignUp
+  url: https://eventup.com/accounts/signup/
+- type: Login
+  url: https://eventup.com/accounts/signin/
+- type: Support
+  url: https://eventup.com/contact/
+- type: Blog
+  url: https://eventupblog.tripleseat.com
+- type: DomainSecurity
+  url: security/eventup-domain-security.yml
+- type: WellKnown
+  url: well-known/eventup-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
